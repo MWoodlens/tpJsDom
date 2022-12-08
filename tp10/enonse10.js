@@ -23,7 +23,5 @@ btn.addEventListener('click',(e)=>{
 
   let selection=document.getSelection();
   selection.addRange(range);
-  console.log(selection.toString())
-  
   navigator.clipboard.writeText( selection.toString())
 });
