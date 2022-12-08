@@ -1,7 +1,7 @@
 const liste=['click', 'dblclick', 'aksyonpam'];
 let btn=document.querySelector('#action');
 let input=document.querySelector('input[name=event-name]');
-document.body.addEventListener('aksyonpam',(e)=>{
+btn.addEventListener('aksyonpam',(e)=>{
     alert('sa se aksyon pam');
 });
 const eventpam=new Event('aksyonpam');
