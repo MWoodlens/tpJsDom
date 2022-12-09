@@ -1,7 +1,6 @@
 const btn=document.querySelector('#copy');
 const h1=document.querySelector('h1');
 const p=document.querySelector('p');
-const main=document.querySelector('main');
 
 h1.addEventListener('selectstart',(e)=>{
     e.preventDefault();
