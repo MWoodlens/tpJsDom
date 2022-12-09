@@ -16,12 +16,14 @@ p.addEventListener('copy',(e)=>{
     e.preventDefault();
 });
 
-btn.addEventListener('click',(e)=>{
-    let range=document.createRange();
+btn.onclick=()=>{
+    let range=new Range();
     range.setStart(h1.firstChild, 0) ;
   range.setEnd(p.firstChild, p.textContent.length);
-
+    
   let selection=document.getSelection();
+  selection.removeAllRanges();
   selection.addRange(range);
-  navigator.clipboard.writeText( selection.toString())
-});
+  console.log(selection.toString());
+  navigator.clipboard.writeText(selection.toString());
+}
