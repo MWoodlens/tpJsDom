@@ -23,6 +23,5 @@ btn.onclick=()=>{
   let selection=document.getSelection();
   selection.removeAllRanges();
   selection.addRange(range);
-  console.log(selection.toString());
   navigator.clipboard.writeText(selection.toString());
 }
